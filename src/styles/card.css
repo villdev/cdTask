@@ -294,10 +294,6 @@
   .main-details__row:last-child {
     font-size: 0.875rem;
   }
-  .college-original-fee {
-    /* font-size: 0.875rem; */
-    /* font-weight: 500; */
-  }
   .college-discounted-fee {
     font-size: 1.6rem;
   }

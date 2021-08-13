@@ -1,7 +1,7 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import collegeImg from "../images/college_02.jpg";
-import { composeNearestArray, formatMoney, parseOffertext } from "../utils";
+import { composeNearestArray, formatMoney } from "../utils";
 
 import "../styles/card.css";
 
@@ -119,7 +119,6 @@ export default function CollegeCard({ collegeData }) {
           </div>
         </div>
         <div className="card-footer">
-          {/* <div className="offer">{parseOffertext(offertext)}</div> */}
           <div className="offer">
             Flat Rs <span className="bold teal-color">2,000</span> off + upto Rs{" "}
             <span className="bold teal-color">500</span> wallet! to avail...{" "}
