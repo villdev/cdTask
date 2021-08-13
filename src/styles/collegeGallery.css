@@ -1,0 +1,24 @@
+.college-gallery-wrapper {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  /* row-gap: 2rem; */
+}
+
+@media (max-width: 1400px) {
+  .college-gallery-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (max-width: 1310px) {
+  .college-gallery-wrapper {
+    grid-template-columns: repeat(1, 700px);
+  }
+}
+@media (max-width: 768px) {
+  .college-gallery-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

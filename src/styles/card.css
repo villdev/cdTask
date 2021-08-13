@@ -1,0 +1,314 @@
+.college-card {
+  position: relative;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  /* height: 450px; */
+  /* width: 800px; */
+  /* overflow: hidden; */
+}
+.card--promoted {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 160px;
+  height: 40px;
+  color: var(--text-white);
+  font-weight: 500;
+  transform: translateY(-50%);
+  border-top: 20px solid #68a7ff;
+  border-left: 30px solid transparent;
+  border-bottom: 20px solid #68a7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.college-card__upper {
+  padding: 1.5rem 1rem 1rem 1rem;
+  position: relative;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.college-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tint-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.college-rating {
+  align-self: flex-end;
+  background-color: #f5a626;
+  border: 1px solid #e39d2a;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem;
+  color: var(--text-white);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.college-rating__number {
+  line-height: 1.2;
+  /* display: flex; */
+  /* align-items: flex-end; */
+}
+.college-rating__number .bold {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.college-highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.college-tags {
+  display: flex;
+}
+.tag {
+  background-color: var(--bg);
+  border-radius: 1.2rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--text);
+}
+.tag::first-letter {
+  text-transform: capitalize;
+}
+.tag ~ .tag {
+  margin-left: 0.5rem;
+}
+
+.college-ranking {
+  color: var(--text-white);
+}
+
+.college-card__lower {
+  /* padding: 1rem 1rem 0.5rem 1rem; */
+  position: relative;
+  /* min-height: 40%; */
+}
+
+.card-main-content {
+  display: flex;
+  padding: 1rem 1rem 0.2rem 1rem;
+}
+.main-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main-details__row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main-details__row:last-child {
+  margin-top: auto;
+  /* background-color: red; */
+  /* line-height: 2; */
+}
+.college-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.college-rating--stars {
+  margin-left: 0.7rem;
+  transform: translateY(-2%);
+}
+.college-nearest {
+  padding-right: 0.6rem;
+  /* font-size: 0.875rem; */
+}
+.college-nearest--light {
+  color: var(--text-light);
+}
+.college-match-indicator {
+  font-weight: 500;
+}
+.college-famous-nearest {
+  display: flex;
+  margin-left: 0.5rem;
+}
+.college-famous-nearest__item {
+  color: var(--text-light);
+}
+.college-famous-nearest__item .bold {
+  color: var(--text);
+  font-weight: 500;
+}
+.college-famous-nearest__item .separator {
+  padding: 0 0.2rem;
+  font-weight: 500;
+}
+
+.fee-details__row {
+  display: flex;
+  justify-content: flex-end;
+}
+.fee-details__row:first-child {
+  line-height: 2;
+  display: flex;
+  align-items: center;
+}
+.college-original-fee {
+  /* text-decoration: line-through; */
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.college-original-fee .currency-symbol {
+  margin-right: 0rem;
+}
+.college-original-fee::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: var(--text);
+}
+
+.college-discount-tag {
+  display: flex;
+  margin-left: 0.5rem;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 12px solid #dd1c26;
+  border-bottom: 8px solid transparent;
+}
+.discount-value {
+  background-color: #dd1c26;
+  height: 16px;
+  width: 32px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+}
+.discount-value .bold {
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
+
+.college-discounted-fee {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #dd1c26;
+}
+.currency-symbol {
+  margin-right: 0.5rem;
+}
+.college-fee-cycle {
+  color: var(--text-light);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem 0;
+}
+.offer {
+  background-color: #ccf5e7;
+  padding: 0.4rem 1.6rem 0.4rem 1rem;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-weight: 500;
+}
+.offer .bold {
+  font-weight: 600;
+}
+.login-btn--link {
+  background-color: transparent;
+  border: 0;
+  color: #219dd3;
+  /* font-size: 1rem; */
+  font-weight: 700;
+  font-family: var(--font);
+  cursor: pointer;
+}
+.college-amenities {
+  display: flex;
+}
+.college-amenities__item {
+  font-weight: 500;
+}
+.college-amenities .separator {
+  margin: 0 0.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1660px) {
+  .college-rating {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .college-rating__number {
+    font-size: 1.2rem;
+  }
+  .tag {
+    font-size: 0.875rem;
+  }
+  .college-ranking {
+    font-size: 0.875rem;
+  }
+  .college-name {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .college-nearest,
+  .college-nearest--light {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .main-details__row:last-child {
+    font-size: 0.875rem;
+  }
+  .college-original-fee {
+    /* font-size: 0.875rem; */
+    /* font-weight: 500; */
+  }
+  .college-discounted-fee {
+    font-size: 1.6rem;
+  }
+  .college-fee-cycle {
+    font-size: 0.875rem;
+  }
+
+  .offer {
+    font-size: 0.875rem;
+  }
+  .college-amenities__item {
+    font-size: 0.875rem;
+  }
+}
