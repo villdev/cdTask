@@ -12,7 +12,7 @@
     gap: 2rem;
   }
 }
-@media (max-width: 1310px) {
+@media (max-width: 1320px) {
   .college-gallery-wrapper {
     grid-template-columns: repeat(1, 700px);
   }
