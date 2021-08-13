@@ -59,7 +59,6 @@ export default function CollegeCard({ collegeData }) {
                 <ReactStars
                   count={5}
                   value={rating}
-                  // onChange={ratingChanged}
                   size={18}
                   activeColor="#444444"
                   edit={false}

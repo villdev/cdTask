@@ -24,11 +24,7 @@ export default function Home() {
         //   </p>
         // }
       >
-        <CollegeGallery
-          colleges={colleges}
-          status={status}
-          getNextPage={getNextPage}
-        />
+        <CollegeGallery colleges={colleges} />
       </InfiniteScroll>
     </div>
   );
